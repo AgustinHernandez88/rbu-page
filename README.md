@@ -3,6 +3,32 @@
 
 Este proyecto es una aplicación web diseñada para la gestión de tareas, con un formulario de inicio de sesión desarrollado en React y una API REST creada con Node.js y Express.
 
+## Estructura del Proyecto
+
+RBU/
+├── backend/                
+│   ├── controllers/         # Controladores que manejan la lógica de negocio
+│   ├── routes/              # Definición de las rutas de la API REST
+│   ├── server.js            # Archivo principal del servidor Express
+│   ├── data/   
+│   └── package.json         # Configuración de dependencias y scripts para el backend
+├── login-task-manager/     
+│   ├── public/              # Archivos estáticos (CSS, imágenes)
+│   ├── src/
+│   │   ├── assets/          # Imagenes para el Proyecto                 
+│   │   ├── components/      # Componentes reutilizables de React
+│   │   ├── App.js           # Componente principal de la aplicación React
+│   │   └── index.js         # Punto de entrada para React
+│   └── package.json         # Configuración de dependencias y scripts para el frontend
+├── node_modules/           
+│   └── ...                  # Dependencias instaladas por npm (se genera automáticamente)
+├── package.json            
+│                           # Archivo de configuración para la raíz del proyecto
+├── package-lock.json       
+│                           # Archivo de bloqueo de versiones exactas de dependencias
+└── README.md               
+                            # Documentación del proyecto
+
 ## Tecnologías Utilizadas
 
 ### Frontend
@@ -74,3 +100,7 @@ Este proyecto está bajo licencia MIT y es de código abierto. Si encuentras út
 ## License
 
 Este proyecto está bajo la [licencia MIT](LICENSE).
+
+## Capturas
+<img width="953" alt="Captura de pantalla Proyecto RBU" src="https://github.com/user-attachments/assets/9f6ae3fd-0d89-460f-947a-90bde22f5877" />
+<img width="329" alt="Captura de pantalla Proyecto RBU 2" src="https://github.com/user-attachments/assets/1d2355d7-0514-493f-97f5-b7b543c077c4" />
