@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  background-color: #f4f4f4;
+  color: rgb(33, 37, 41);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.login-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.login-left {
+  flex: 0.7;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background-image {
+  width: 181%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.logo-mirbu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: auto;
+  z-index: 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0; 
+}
+
+.circle_white {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url('../assets/circle_white.png');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 768px) {
+  .circle_white {
+    display: none;
+  }
+}
+
+.login-right {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h2 {
+  color: #224e9d;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 0px solid #ccc;
+  border-left: 6px solid #224e9d;
+  background-color: #f4f4f4;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  color: #666;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-group input::placeholder {
+  color: #999;
+  font-style: Dosis;
+}
+
+.input-group .toggle-password {
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #224e9d;
+  border-left: 1px solid #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.forgot-password {
+  color: #224e9d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 20px;
+  background-color: #224e9d;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 300;
+}
+
+.login-button:hover {
+  background-color: #163d73;
+}
+
+
+.footer-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-image img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .background-image {
+    height: 200px;
+  }
+
+  .login-form {
+    padding: 10px;
+  }
+
+  .footer-image img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-button {
+    font-size: 14px;
+  }
+}
